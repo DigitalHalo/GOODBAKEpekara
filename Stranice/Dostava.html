@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css.css">
+    <link rel="icon" type="image/jpg" href="../Naziv,logo i ikonica/ikonica.jpg">
+    <title>Dostava</title>
+</head>
+<body>
+    <div id="gore">
+        <div class="Logo">
+            <a href="../index.html">
+            <img src="../Naziv,logo i ikonica/logo.jpg">
+            </a>
+        </div>
+      </div>
+    <div id="Meni">
+    <ul>
+        <li><a href="../index.html">Pocetna</a></li>
+        <li class="spusti">
+            <a href="Proizvodi.html">Proizvodi</a>
+            <ul class="spustimeni">
+              <li><a href="Proizvodi.html#Pecivas">Slana peciva</a></li>
+            <ul class="spustimeni1">
+              <li><a href="Proizvodi.html#Pecivasl">Slatka peciva</a></li>
+              </ul>
+           </ul>
+          </li>
+        <li><a href="Registracija.html">Registracija</a></li>
+        <li><a href="Dostava.html">Dostava</a></li>
+        <li class="spusti">
+            <a href="Kontakt.html">Kontakt</a>
+        <ul class="spustimeni">
+            <li><a href="../index.html#Onamag">O nama</a></li>
+        </ul>
+        </li>
+    </ul>
+    </div>
+    <br>
+    <div class="Forma">
+    <form onsubmit="return upisUtabelu(event)">
+        <div id="Unos">
+        <p>Ime:</p>
+        <input type="text" placeholder="Ime" required>
+        <p>Prezime:</p>
+        <input type="text" placeholder="Prezime" required>
+        <p>Ulica:</p>
+        <input type="text" required>
+        <p>Sprat,broj stana,informacije koje su bitne za isporuku:</p>
+        <input type="text" required>
+        <p>Telefon:</p>
+        <input type="tel" required>
+        </div>
+        <div id="Odabir">
+        <p>Način plaćanja:</p>
+        <input type="radio" name="Način plaćanja" required><label>Pouzećem</label>
+        <input type="radio" name="Način plaćanja" required><label>Plaćanje karticom</label>
+        <br><br>
+        </div>
+        <div id="TabelaPorudzbine">
+        </div>
+        <br>
+        <div id="Naruci">
+        <input type="submit" value="Naručite">
+        </div>
+    </form>
+    </div>
+    <script src="../porudzbina.js"></script>
+</body>
+</html>

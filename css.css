@@ -1,0 +1,744 @@
+body{
+    font-family:font;
+    background-color:#2f363e;
+    color:white;
+    overflow-x:hidden;
+}
+@font-face {
+    font-family:font;
+    src: url(font.ttf);
+}
+.Logo img{
+    border-radius:20px;
+    margin-top:20px;;
+}
+#Meni{
+    text-align:center;
+}
+#Meni li{
+    display:inline-block;
+}
+#Meni a{
+    display:inline-block;
+    background-color:#5b90ff;
+    margin:50px;
+    padding:25px;
+    width:170px;
+    height:25px;
+    border:5px solid #2f363e;
+    border-radius:10px;
+    text-decoration:none;
+    text-align:center;
+    text-transform:uppercase;
+    color:white;
+    font-weight:bold;
+}
+#Meni a:hover{
+    transition:0.5s;
+    background-color:#2f363e;
+    border:5px solid #5b90ff;
+    cursor:pointer;
+}
+@keyframes padanje{
+    0%{
+        opacity:0;
+        transform:translateY(-10px);
+    }
+    100%{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+.spusti{
+    position:relative;
+}
+.spustimeni{
+    list-style:none;
+    padding:0;
+    margin:0;
+    position:absolute;
+    top:50%;
+    left:0;
+    border-radius:10px;
+    visibility:hidden;
+    opacity:0;
+    transition:opacity 0.3s ease, visibility 0s 0.3s;
+    transform:translateY(-20px);
+}
+.spustimeni a{
+    border:5px solid #2f363e;
+    color:white;
+    text-transform:uppercase;
+    text-decoration:none;    
+    display:inline-block;
+    text-align:center;
+}
+.spustimeni a:hover{
+    background-color:#2f363e;
+    color:white;
+}
+.spusti:hover .spustimeni{
+    visibility:visible;
+    opacity:1;
+    transition:opacity 0.3 ease, visibility 0s 0s;
+    animation:padanje 1s ease-out forwards;
+}
+h1{
+    text-align:center;
+    font-size:70px;
+    color:white;
+}
+#Onama{
+    font-size:30px;
+    font-family:font;
+    border:10px solid #5b90ff;
+    border-radius:5px;
+    padding:10px;
+    color:white;
+    margin-bottom:2%;
+}
+#dobrodosli{
+    font-weight:bold;
+}
+.Krofna h3{
+    text-align:center;
+    font-size: 50px;
+    margin-bottom: 0px;
+    color:white;
+}
+.Krofna{
+    display: inline-block;
+    text-align:center;
+    margin-left:15%;
+    margin-bottom:2%;
+}
+.Krofna img{
+    border:7px solid #5b90ff;
+    border-radius: 10px;
+    width:500px;
+    height:800px;
+}
+.Krofna img:hover{
+    border:7px solid orange;
+}
+.MiniPizza h3{
+    text-align:center;
+    font-size:50px;
+    margin-bottom:0px;
+    color:white;
+}
+.MiniPizza{
+    display:inline-block;
+    text-align:center;
+    margin-left:15%;
+    margin-bottom:2%;
+}
+.MiniPizza img{
+    border:7px solid #5b90ff;
+    border-radius: 10px;
+    width:500px;
+    height:800px;
+}
+.MiniPizza img:hover{
+    border:7px solid orange;
+}
+hr{
+    border:2px solid #5b90ff;
+}
+.Brzikontakt{
+    font-size:20px;
+}
+.Brzikontakt h3{
+    font-size: 50px;
+}
+.Brzikontakt p{
+    border:2px solid #5b90ff;
+    border-radius:5px;
+    display:inline-block;
+}
+.Brzikontakt a{
+    text-decoration:none;
+    color:orange;
+}
+.Ikonice h3{
+    font-size:50px;
+}
+.Ikonice p{
+    font-size:20px;
+}
+.Ikonice img{
+    background-color:white;
+    border-radius:35px;
+    object-fit:cover;
+    width:100px;
+    margin-left:1%;
+    margin-right:1%;
+}
+#Slika img{
+    width:500px;
+    border-radius:20px;
+}
+.Poruka textarea{
+    border:10px;
+    border-radius:5px;
+    background-color:#b0c4de;
+    margin-left:1.5%;
+    font-family:font;
+    font-size:16px;
+}
+.Dugme input{
+    border:2px solid #2f363e;
+    border-radius:5px;
+    width:100px;
+    height:50px;
+    background-color:#5b90ff;
+    font-family:font;
+    font-size:20px;
+    font-weight:bold;
+    margin-left:1.5%;
+}
+.Dugme input:hover{
+    border:2px solid #5b90ff;
+    background-color:#2f363e;
+    color:white;
+}
+.Forma{
+    border:5px solid #5b90ff;
+    border-radius:10px;
+}
+#Unos p{
+    font-weight:bold;
+    font-size:20px;
+    margin-left:2%;
+    margin-bottom:0;
+}
+input::placeholder{
+    font-weight:bold;
+    color:#2f363e;
+    font-size:15px;
+}
+#Unos input{
+    margin-left:2%;
+    height:35px;
+    font-family:font;
+    background-color:#b0c4de;
+    border-radius:5px;
+    color:#2f363e;
+    font-weight:bold;
+    font-size:20px;
+}
+#Unos button{
+    margin-left:2%;
+    border:2px solid #2f363e;
+    border-radius:5px;
+    width:150px;
+    height:35px;
+    background-color:#5b90ff;
+    font-family:font;
+    font-size:18px;
+    font-weight:bold;
+}
+#Unos button:hover{
+    border:2px solid #5b90ff;
+    background-color:#2f363e;
+    color:white;
+}
+#Odabir p{
+    font-weight:bold;
+    font-size:20px;
+    margin-left:2%;
+    margin-bottom:0;
+}
+#Odabir input{
+    height:35px;
+    width:20px;
+    margin-left:2%;
+    vertical-align:middle;
+}
+#Odabir label{
+    font-size:20px;
+    margin-bottom:10px;
+    vertical-align:middle;
+    font-family:font;
+}
+#Registruj{
+    margin-left:2%;
+    margin-bottom:30px;
+}
+#Registruj input{
+    border:2px solid #2f363e;
+    border-radius:5px;
+    width:150px;
+    height:50px;
+    background-color:#5b90ff;
+    font-family:font;
+    font-size:18px;
+    font-weight:bold;
+}
+#Registruj input:hover{
+    border:2px solid #5b90ff;
+    background-color:#2f363e;
+    color:white;
+}
+#Tabelacena p{
+    font-weight:bold;
+    font-size:20px;
+    text-align:center;
+    margin-left:190px;
+}
+.Tabela{
+    width:80%;
+    border:5px solid #5b90ff;
+    border-radius:5px;
+    margin:0 auto;
+}
+.Tabela th{
+    border:3px solid #b0c4de;
+    border-radius:5px;
+    color:red;
+    font-size:20px;
+}
+.Tabela td{
+    border:3px solid #b0c4de;
+    border-radius:5px;
+    text-align:center;
+    font-size:17px;
+}
+.Tabela tr:nth-child(even){
+    background-color:#5b90ff;
+    color:#2f363e;
+}
+#Naruci{
+    margin-left:1%;
+    margin-bottom:10px;
+}
+#Naruci input{
+    border:2px solid #2f363e;
+    border-radius:5px;
+    width:150px;
+    height:50px;
+    background-color:#5b90ff;
+    font-family:font;
+    font-size:18px;
+    font-weight:bold;
+}
+#Naruci input:hover{
+    border:2px solid #5b90ff;
+    background-color:#2f363e;
+    color:white;
+}
+.Slanapeciva{
+    text-align:center;
+    width:100%;
+    margin:1%;
+}
+.Slanapeciva img{
+    width:500px;
+    height:400px;
+    border-radius:60px;
+}
+#Proizvodb{
+    display:inline-block;
+    text-align:center;
+    margin:2%;
+    border:8px solid #5b90ff;
+    padding:10px;
+    border-radius:50px;
+}
+#Proizvodb:hover{
+    border:8px solid orange;
+}
+#Proizvodp{
+    display:inline-block;
+    text-align:center;
+    margin:2%;
+    vertical-align:39px;
+    border:8px solid #5b90ff;
+    padding:10px;
+    border-radius:50px;
+}
+#Proizvodp:hover{
+    border:8px solid orange;
+}
+#Proizvodm{
+    display:inline-block;
+    text-align:center;
+    margin:2%;
+    vertical-align:39px;
+    border:8px solid #5b90ff;
+    padding:10px;
+    border-radius:50px;
+}
+#Proizvodm:hover{
+    border:8px solid orange;
+}
+#Proizvods{
+    display:inline-block;
+    text-align:center;
+    margin:2%;
+    border:8px solid #5b90ff;
+    padding:10px;
+    border-radius:50px;
+    vertical-align:75px;
+}
+#Proizvods:hover{
+    border:8px solid orange;
+}
+#Proizvodh{
+    display:inline-block;
+    text-align:center;
+    margin:2%;
+    vertical-align:75px;
+    border:8px solid #5b90ff;
+    padding:10px;
+    border-radius:50px;
+}
+#Proizvodh:hover{
+    border:8px solid orange;
+}
+.Slatkapeciva{
+    text-align:center;
+    width:100%;
+    margin:1%;
+}
+.Slatkapeciva img{
+    width:500px;
+    height:400px;
+    border-radius:60px;
+}
+#Proizvodkr{
+    display:inline-block;
+    text-align:center;
+    margin:2%;
+    border:8px solid #5b90ff;
+    padding:10px;
+    border-radius:50px;
+}
+#Proizvodkr:hover{
+    border:8px solid orange;
+}
+#Proizvodkro{
+    display:inline-block;
+    text-align:center;
+    margin:2%;
+    vertical-align:75px;
+    border:8px solid #5b90ff;
+    padding:10px;
+    border-radius:50px;
+}
+#Proizvodkro:hover{
+    border:8px solid orange;
+}
+#Proizvodpi{
+    display:inline-block;
+    text-align:center;
+    margin:2%;
+    vertical-align:75px;
+    border:8px solid #5b90ff;
+    padding:10px;
+    border-radius:50px;
+}
+#Proizvodpi:hover{
+    border:8px solid orange;
+}
+.Dostava button{
+    border:2px solid #2f363e;
+    border-radius:5px;
+    width:150px;
+    height:50px;
+    background-color:#5b90ff;
+    font-family:font;
+    font-size:18px;
+    font-weight:bold;
+}
+.Dostava button:hover{
+    border:2px solid #5b90ff;
+    background-color:#2f363e;
+    color:white;
+}
+.spustimeni1{
+    list-style:none;
+    padding:0;
+    margin:0;
+    position:absolute;
+    top:50%;
+    left:0;
+    border-radius:10px;
+    visibility:hidden;
+    opacity:0;
+    transition:opacity 0.3s ease, visibility 0s 0.3s;
+    transform:translateY(-20px);
+}
+.spustimeni1 a{
+    border:5px solid #2f363e;
+    color:white;
+    text-transform:uppercase;
+    text-decoration:none;    
+    display:inline-block;
+    text-align:center;
+}
+.spustimeni1 a:hover{
+    background-color:#2f363e;
+    color:white;
+}
+.spusti:hover .spustimeni1{
+    visibility:visible;
+    opacity:1;
+    animation:padanje 1s ease-out forwards;
+}
+@media screen and (max-width:1325px){
+    #Meni a{
+        margin:10px;
+        padding:15px;
+        width:170px;
+        height:25px;
+    }
+    .Krofna img, .MiniPizza img{
+        width:50%;
+        height:auto;
+    }
+    .Krofna, .MiniPizza {
+        text-align:center;
+        margin-left:0;
+        margin-bottom:20px;
+    }
+    h1{
+        font-size:40px;
+    }
+    #Onama{
+        font-size:20px;
+    }
+    .Brzikontakt h3, .Ikonice h3{
+        font-size:30px;
+    }
+    #Slika img{
+        width:200px;
+    }
+    .Ikonice img{
+        width:50px;
+    }
+    .Poruka textarea{
+        width:75%;
+        margin-left:10%;
+    }
+    .spustimeni1{
+        top:100%;
+    }
+    .spustimeni{
+        top:100%;
+        z-index:1;
+    }
+    #Tabelacena p{
+        font-weight:bold;
+        font-size:20px;
+        margin-left:130px;
+    }
+}
+@media screen and (max-width:767px){
+    #Meni a{
+        margin:10px;
+        padding:15px;
+        width:170px;
+        height:25px;
+    }
+    .Krofna img, .MiniPizza img{
+        width:50%;
+        height:auto;
+    }
+    .Krofna, .MiniPizza {
+        text-align:center;
+        margin-left:0;
+        margin-bottom:20px;
+    }
+    h1{
+        font-size:40px;
+    }
+    #Onama{
+        font-size:20px;
+    }
+    .Brzikontakt h3, .Ikonice h3{
+        font-size:30px;
+    }
+    #Slika img{
+        width:200px;
+    }
+    .Ikonice img{
+        width:50px;
+    }
+    .Poruka textarea{
+        width:75%;
+        margin-left:10%;
+    }
+    .spustimeni1{
+        top:100%;
+    }
+    .spustimeni{
+        top:100%;
+        z-index:1;
+    }
+    #Tabelacena p{
+        font-weight:bold;
+        font-size:20px;
+        margin-left:80px;
+    }
+    #Proizvods{
+        vertical-align:middle;
+    }
+    #Proizvodpi{
+        vertical-align:middle;
+    }
+    #Proizvodh{
+        vertical-align:middle;
+    }
+}
+@media screen and (max-width:430px){
+    .Logo img{
+        border-radius:20px;
+        margin-top:20px;;
+        width:100%;
+    }
+    #Meni a{
+        margin:10px;
+        padding:15px;
+        width:170px;
+        height:25px;
+    }
+    .Krofna img, .MiniPizza img{
+        width:50%;
+        height:auto;
+    }
+    .Krofna, .MiniPizza {
+        text-align:center;
+        margin-left:0;
+        margin-bottom:20px;
+    }
+    h1{
+        font-size:40px;
+    }
+    #Onama{
+        font-size:20px;
+    }
+    .Brzikontakt h3, .Ikonice h3{
+        font-size:30px;
+    }
+    #Slika img{
+        width:200px;
+    }
+    .Ikonice img{
+        width:50px;
+    }
+    .Poruka textarea{
+        width:75%;
+        margin-left:10%;
+    }
+    .spustimeni1{
+        top:100%;
+    }
+    .spustimeni{
+        top:100%;
+        z-index:1;
+    }
+    .Slanapeciva img{
+        width:300px;
+        height:400px;
+        border-radius:60px;
+    }
+    .Slatkapeciva img{
+        width:300px;
+        height:400px;
+        border-radius:60px;
+    }
+    #Unos input{
+        font-size:10px;
+    }
+    #Tabelacena p{
+        font-weight:bold;
+        font-size:20px;
+        margin-left:50px;
+    }
+    #Proizvods{
+        vertical-align:middle;
+    }
+    #Proizvodpi{
+        vertical-align:middle;
+    }
+    #Proizvodh{
+        vertical-align:middle;
+    }
+}
+    @media screen and (max-width:411px){
+        .Logo img{
+            border-radius:20px;
+            margin-top:20px;;
+            width:100%;
+        }
+        #Meni a{
+            margin:10px;
+            padding:15px;
+            width:170px;
+            height:25px;
+            margin-right:35px;
+        }
+        .Krofna img, .MiniPizza img{
+            width:50%;
+            height:auto;
+        }
+        .Krofna, .MiniPizza {
+            text-align:center;
+            margin-left:0;
+            margin-bottom:20px;
+        }
+        h1{
+            font-size:40px;
+        }
+        #Onama{
+            font-size:20px;
+        }
+        .Brzikontakt h3, .Ikonice h3{
+            font-size:30px;
+        }
+        #Slika img{
+            width:200px;
+        }
+        .Ikonice img{
+            width:50px;
+        }
+        .Poruka textarea{
+            width:75%;
+            margin-left:10%;
+        }
+        .spustimeni1{
+            top:100%;
+        }
+        .spustimeni{
+            top:100%;
+            z-index:1;
+        }
+        .Slanapeciva img{
+            width:200px;
+            height:200px;
+            border-radius:60px;
+        }
+        .Slatkapeciva img{
+            width:200px;
+            height:200px;
+            border-radius:60px;
+        }
+        #Unos input{
+            font-size:8px;
+        }
+        #Tabelacena p{
+            font-weight:bold;
+            font-size:20px;
+            margin-left:50px;
+        }
+        #Proizvods{
+            vertical-align:middle;
+        }
+        #Proizvodpi{
+            vertical-align:middle;
+        }
+        #Proizvodh{
+            vertical-align:middle;
+        }
+}
